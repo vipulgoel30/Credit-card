@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height:100vh;
+
+  color: #fff;
+}
+
+
+/* common */
+h1 {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+
+.front:focus,
+.back:focus {
+  scale: 1.1;
+}
+
+/* input reset for number type */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.back ,.front{
+ width:70vw;
+
+  max-width: 60rem;
+
+  border-radius: 1.5rem;
+  
+  transition: all 0.2s;
+}
+/* @media screen and (max-width:900px) {
+  .back ,.front{
+    width:80vw;
+  }
+} */
+
+/* front */
+.front {
+
+  background: linear-gradient(to right, #000, #444, #666, #888);
+
+  z-index: 5;
+  padding: 1rem 2rem 2rem;
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+  border: 2px solid #bbb;
+
+}
+
+.front-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.card-no-input {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:.2rem
+}
+
+input {
+  width: 90%;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #fff;
+
+  border-radius: 0.5rem;
+  background-color: inherit;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all .2s;
+
+}
+input::placeholder{
+  color:white;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+input:focus {
+  outline: 2px solid #222;
+}
+
+.card-name-valid {
+display: grid;
+grid-template-columns: 2fr 1fr;
+
+}
+.card-valid-input{
+  display: flex;
+  gap:1rem;
+}
+
+
+/* back */
+.back {
+
+margin-top:5rem;
+ margin-left:-50vw;
+
+  background: linear-gradient(to right, #888, #666, #444, #333);
+
+}
+
+.back-strip {
+  margin-top: 5rem;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #eee;
+  margin-bottom: 2rem;
+}
+
+.card-cvv {
+  margin-left: auto;
+  width: 17%;
+}
+@media (max-width:300px){
+    .back,.front{
+   width:80vw;
+  }
+   .back{
+    margin-left:-65vw;
+  }
+}
+@media (min-width:900px ){
+  .back,.front{
+   width:60vw;
+  }
+   .back{
+    margin-left:-43vw;
+  }
+}
+@media (min-width:1200px ){
+  .back,.front{
+   width:50vw;
+  }
+   .back{
+    margin-left:-35vw;
+  }
+}
+@media (min-width:1400px){
+  .back{
+    margin-left:-45rem;
+  }
+}

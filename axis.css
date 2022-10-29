@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+.axis {
+  display: flex;
+
+  align-items: flex-start;
+}
+.axis-logo {
+  width: 2.2rem;
+  height: 2.5rem;
+
+  position: relative;
+}
+[class^="axis-logo-"] {
+  position: absolute;
+  width: 0.8rem;
+  background-color: #800000;
+}
+.axis-logo-left {
+  top: 0;
+  left: 0.5rem;
+  height: 2.5rem;
+  transform: skewX(-30deg);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 30%);
+}
+.axis-logo-right {
+  bottom: 0;
+  left: 1.4rem;
+  height: 0.9rem;
+ 
+  transform: skewX(30deg);
+}
+.axis-content {
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  word-spacing: 0.2rem;
+  padding: 0.4rem;
+  color: #800000;
+  letter-spacing: 0.05rem;
+}

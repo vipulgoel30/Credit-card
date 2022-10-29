@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" />
+
+    <link rel="stylesheet" href="axis.css" media="screen" />
+    <link rel="stylesheet" href="mastercard.css" media="screen" />
+  </head>
+
+  <body>
+
+    <!-- front panel -->
+    <main class="front">
+
+      <!-- front logo -->
+      <section class="front-logo">
+        <!-- axis bank logo -->
+        <div class="axis">
+          <div class="axis-logo">
+            <div class="axis-logo-left"></div>
+            <div class="axis-logo-right"></div>
+          </div>
+          <div class="axis-content">AXIS BANK</div>
+        </div>
+        <!-- mastercard logo -->
+        <div class="mastercard">
+          <div class="mastercard-left"></div>
+          <div class="mastercard-right"></div>
+          <div class="mastercard-label">TM</div>
+        </div>
+
+      </section>
+
+      <!-- card no front panel -->
+      <main class="card-no">
+        <h1>card number</h1>
+        <div class="card-no-input">
+          <input type="number" max=9999 min=0 id="id1" />
+          <input type="number" max=9999 min=0 id="id2" />
+          <input type="number" max=9999 min=0 id="id3" />
+          <input type="number" max=9999 min=0 id="id4" />
+        </div>
+      </main>
+      <!-- card holder name and valid thru - front panel -->
+
+      <section class="card-name-valid">
+        <!-- card holder name -->
+        <div class="card-holder-name">
+          <h1>card holder</h1>
+          <section class="card-holder-input">
+            <input type="text" id="id5" maxlength="10" />
+          </section>
+        </div>
+
+        <!-- valid thru -->
+        <div class="card-valid">
+          <h1>Valid thru</h1>
+          <div class="card-valid-input">
+            <input type="number" placeholder="MM" max=99 min=0 id="id6"></input>
+            <input type="number" placeholder="YY" max=99 min=0 id="id7"></input>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- back panel-->
+    <section class="back">
+      <div class="back-strip"></div>
+      <div class="card-cvv">
+        <h1>cvv</h1>
+        <section class="card-cvv-input">
+          <input type="number" id="id8" max=999 min=0 />
+        </section>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
